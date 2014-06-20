@@ -31,15 +31,16 @@ Based on https://github.com/msysgit/msysgit/wiki/Vagrant
  11. **Run** ```cd /vagrant```
  12. Run ```git clone https://github.com/YueLinHo/TestAutoCrlf.git```
  13. **Run** ```cd TestAutoCrlf```
- 14. **Delete** all files in the working tree via Windows Explorer.
- 15. **Run** ```git checkout HEAD -f -- "MIX-more_LF.txt"```
+ 14. **Run** ```git config core.autocrlf true```
+ 15. **Delete** all files in the working tree via Windows Explorer.
+ 16. **Run** ```git checkout HEAD -f -- "MIX-more_LF.txt"```
    * Got the file with **mixed EOLs**
- 16. **Run** ```git checkout HEAD -f -- "MIX-more_CRLF.txt"```
+ 17. **Run** ```git checkout HEAD -f -- "MIX-more_CRLF.txt"```
    * Got the file with **mixed EOLs**
 
 (Check the EOL via Notepad++ on Windows)
 
-Double check : Run Step 3-5, 10-11, 13-16
+Double check : Run Step 3-5, 10-11, 13-17
 
 ### Git for Windows 1.9.4
 
